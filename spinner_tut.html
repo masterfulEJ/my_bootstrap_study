@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>EJ's Nav Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/spinner.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+<div class="main">
+  <h1>Hello, Welcome to my website</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quibusdam voluptatum magnam temporibus amet recusandae dolor, quod id voluptates neque officiis deserunt culpa. Magnam, explicabo, rem sed excepturi voluptates, repellat ducimus necessitatibus
+    aspernatur consequatur ipsum aperiam odit iusto id nostrum!</p>
+</div>
+
+<script>
+document.querySelector(".main p").style.display = "none";
+document.querySelector(".main").classList.add("spinner-1");
+
+// Mimic Server Request
+setTimeout(() => {
+  document.querySelector(".main").classList.remove("spinner-1");
+  document.querySelector(".main p").style.display = "block";
+}, 4000);
+</script>
+
+</body>
+
+
+
